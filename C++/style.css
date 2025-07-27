@@ -1,0 +1,125 @@
+body {
+  background-color: #234;
+  color: #ccc;
+  cursor: default;
+}
+
+#lesson {
+  transition: opacity 0.5s ease-in-out;
+  user-select: none;
+}
+.fadeOut {
+  opacity: 0;
+}
+
+li {
+  size: fit-content;
+}
+
+.headings {
+  margin-left: 5%;
+  font-family: Monospace;
+  size: fit-content;
+}
+.information {
+  margin-left: 15%;
+  font-weight: bold;
+  font-family: cursive;
+  size: fit-content;
+}
+
+.orange {
+  color: #c87;
+}
+.blue {
+  color: #78b;
+}
+.green {
+  color: #7b8;
+}
+.purple {
+  color: #b5b;
+}
+.grey {
+  color: #777;
+}
+
+.correct {
+  background-color: #243;
+  width: fit-content;
+  box-shadow: 0 0 5px 5px #243;
+}
+.incorrect {
+  background-color: #432;
+  width: fit-content;
+  box-shadow: 0 0 5px 5px #432;
+}
+.highlight {
+  background-color: #456;
+  width: fit-content;
+  box-shadow: 0 0 5px 5px #456;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Monospace;
+  font-size: 32px;
+  border: 4px solid #ddd;
+  border-radius: 5px;
+  color: #ccc;
+  transition: opacity 0.5s ease-in-out;
+  user-select: none;
+}
+#previous {
+  margin-left: 0%;
+  background-color: #412;
+  visibility: hidden;
+}
+#next {
+  margin-left: 35%;
+  background-color: #142;
+  visibility: visible;
+}
+
+#previous:hover {
+  background-color: #a57;
+  box-shadow: 1px 2px 3px 3px black;
+}
+#next:hover {
+  background-color: #5a7;
+  box-shadow: 1px 2px 3px 3px black;
+}
+button:hover {
+  color: black;
+  border: 5px solid black;
+  transition: 0.4s;
+}
+.headings :hover {
+  text-decoration: underline;
+  color: white;
+  transition: 0.3s;
+}
+.information li:hover {
+  background-color: #345;
+  transition: 0.3s;
+  size: fit-content;
+}
+.highlight :not(:is(div)):hover {
+  background-color: white;
+  box-shadow: 0 0 5px 5px rgba(255,255,255,0.6);
+  color: black;
+  transition: 0.4s;
+}
+.correct li:hover {
+  background-color: #273;
+  transition: 0.3s;
+  box-shadow: 0 0 5px 5px #273;
+  color: white;
+}
+.incorrect li:hover {
+  background-color: #822;
+  transition: 0.3s;
+  box-shadow: 0 0 5px 5px #822;
+  color: white;
+}
